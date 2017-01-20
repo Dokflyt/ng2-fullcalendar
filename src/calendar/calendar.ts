@@ -1,39 +1,22 @@
-import {Component, Input, OnInit, AfterViewInit, AfterContentChecked, AfterViewChecked} from '@angular/core';
+import { Component, Input, Inject, ElementRef, AfterViewInit } from '@angular/core';
 import * as $ from 'jquery';
 import 'fullcalendar';
-import {Options} from "fullcalendar";
+import 'fullcalendar-scheduler';
+import { Options } from "fullcalendar-scheduler";
 
-/*
-  Generated class for the Calendar component.
-
-  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
-  for more info on Angular 2 Components.
-*/
 @Component({
   template: '<div></div>',
   selector: 'angular2-fullcalendar'
 })
-export class CalendarComponent implements OnInit,AfterViewInit,AfterContentChecked,AfterViewChecked{
+export class CalendarComponent implements AfterViewInit {
+  @Input() options : Options;
+  el : ElementRef;
 
-  @Input() options:Options;
-  text: string;
-  calendarInitiated:boolean;
-
-  constructor() {
+  constructor(@Inject(ElementRef) el : ElementRef) {
+    this.el = el;
   }
 
-  ngOnInit():void {
-    console.log("ngOnInit");
-  }
-
-  ngAfterViewInit(){
-    setTimeout(()=>{
-      // console.log("100ms after ngAfterViewInit ");
-      $('angular2-fullcalendar').fullCalendar(this.options);
-    }, 100)
-  }
-  ngAfterContentChecked(){
-  }
-  ngAfterViewChecked(){
+  ngAfterViewInit() {
+    $(this.el.nativeElement).fullCalendar(this.options);
   }
 }
