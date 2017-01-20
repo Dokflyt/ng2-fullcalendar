@@ -1,5 +1,7 @@
 # dependencies
-node_nodules/
+node_modules/
+
+debug.log
 
 # tsc generated files
 *.map
