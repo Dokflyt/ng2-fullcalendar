@@ -1,27 +1,28 @@
 {
-  "name": "angular2-fullcalendar",
-  "version": "1.0.15",
-  "description": "Angular2 component for FullCalendar",
+  "name": "angular2-fullcalendar & scheduler",
+  "version": "1.1.0",
+  "description": "Angular2 component for FullCalendar & Scheduler",
   "main": "index.js",
   "scripts": {
     "prepublish": "node_modules/typescript/bin/tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nekken/ng2-fullcalendar.git"
+    "url": "git+https://github.com/dokflyt/ng2-fullcalendar.git"
   },
   "keywords": [
     "fullcalendar",
+    "scheduler",
     "angular 2",
     "angular",
     "calendar"
   ],
-  "author": "Ken Nguyen <ken@nekken.ca> (http://nekken.ca)",
+  "author": "Geir Marius Kirkeberg Jansson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nekken/ng2-fullcalendar/issues"
+    "url": "https://github.com/dokflyt/ng2-fullcalendar/issues"
   },
-  "homepage": "https://github.com/nekken/ng2-fullcalendar#readme",
+  "homepage": "https://github.com/dokflyt/ng2-fullcalendar#readme",
   "dependencies": {
     "@angular/common": "^2.0.1",
     "@angular/core": "^2.0.1",
