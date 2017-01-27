@@ -10,7 +10,7 @@ import { Options } from "fullcalendar-scheduler";
 })
 export class CalendarComponent implements AfterViewInit {
   @Input() options : Options;
-  el : ElementRef;
+  public el : ElementRef;
 
   constructor(@Inject(ElementRef) el : ElementRef) {
     this.el = el;
@@ -18,5 +18,9 @@ export class CalendarComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     $(this.el.nativeElement).fullCalendar(this.options);
+  }
+
+  fullCalendar(...args) {
+    $(this.el.nativeElement).fullCalendar.apply($(this.el.nativeElement), args) // Passing n-arguments along. 
   }
 }
