@@ -6,7 +6,7 @@ import { Options } from "fullcalendar-scheduler";
 
 @Component({
   template: '<div></div>',
-  selector: 'ng2-fullcalendar'
+  selector: 'ng2-fullcalendar-scheduler'
 })
 export class CalendarComponent implements AfterViewInit {
   @Input() options : Options;
