@@ -1,16 +1,16 @@
 
-# Angular 2: FullCalendar component
+# Angular 2: FullCalendar component with FullCalendar Scheduler
 
-An Angular 2 component for fullcalendar
+An Angular 2 component for fullcalendar with FullCalendar Scheduler
 
 ## Installation
 ```
-npm install angular2-fullcalendar --save
+npm install ng2-fullcalendar-scheduler --save
 ```
 ## Usage
 ####Import the calendar component
 ```
-import {CalendarComponent} from "angular2-fullcalendar/src/calendar/calendar";
+import {CalendarComponent} from "ng2-fullcalendar-scheduler/src/calendar";
 // other imports 
 
 @NgModule({
@@ -98,7 +98,7 @@ export class MyComponent{
 ```
 #### Add selector in template file my-component.html
 ```
-<angular2-fullcalendar [options]="calendarOptions"></angular2-fullcalendar>
+<ng2-fullcalendar-scheduler [options]="calendarOptions"></ng2-fullcalendar-scheduler>
 ```
 #### Import the fullcalendar css
 If you're using Angular CLI, this is as simple as including one line in your style.css file:
