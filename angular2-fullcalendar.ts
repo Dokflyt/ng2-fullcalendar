@@ -1,4 +1,4 @@
-import { CalendarComponent } from './src/calendar/calendar';
+import { CalendarComponent } from './src/calendar';
 
 export const Calendar: any[] = [
     CalendarComponent
