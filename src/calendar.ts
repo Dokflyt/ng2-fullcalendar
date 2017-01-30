@@ -21,6 +21,6 @@ export class CalendarComponent implements AfterViewInit {
   }
 
   fullCalendar(...args) {
-    $(this.el.nativeElement).fullCalendar.apply($(this.el.nativeElement), args) // Passing n-arguments along. 
+    return $(this.el.nativeElement).fullCalendar.apply($(this.el.nativeElement), args) // Passing n-arguments along. 
   }
 }
